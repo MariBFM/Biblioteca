@@ -1,0 +1,494 @@
+:root{
+  /*Paleta de colores*/
+  --azul: #011126;
+  --marron:#8c6b58;
+  --latte:#E6C397;
+  --crema:#f2e6e4;
+}
+/*General*/
+html, body{
+  height: 100%;
+  width: 100%;
+}
+header, footer{
+  background-color: var(--azul);
+  display: flex;
+}
+footer{
+  position: static;
+  bottom: 0px;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+  background-color: var(--crema);
+  font-family: "Segoe UI";
+}
+header{
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+footer{
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  height: auto;
+}
+a{
+  text-decoration: none;
+  color: var(--latte);
+}
+form{
+  display: flex;
+  width: 440px;
+  flex-wrap: wrap;
+}
+/*Botones*/
+.botones{/*div index*/
+  display: flex;
+  flex-direction: column;
+}
+.boton, #enviar, .reserva{
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  margin: 10px;
+  background-color: var(--marron);
+  color: var(--latte);
+}
+.reserva, #buscar{
+  width: 100px;
+}
+#sesion, #buscar{
+  background-color: var(--latte);
+  color: var(--marron);
+}
+#registro, #login{
+  background-color: var(--marron);
+  color: var(--latte);
+}
+#login{
+  display: none;
+}
+/*Formularios*/
+.buscador, .libros{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--marron);
+  font-weight: bold;
+}
+.buscador label, .libros label, .perfil label{
+  margin: 4px;
+  font-weight: bold;
+}
+.buscador input, .libros input, .perfil input{
+  margin-right: 10px;
+}
+.perfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.perfil div{
+  display: flex;
+  align-items: center;
+}
+.perfil input{
+  display: none;
+}
+#passwd{
+  display: none;
+}
+/*Tabla*/
+table, tr, th, td{
+  border: none;
+  border-collapse: collapse;
+  text-align: center;
+}
+th{
+  background-color: var(--azul);
+  color: white;
+}
+td, th, td img{
+  width: 100px;
+  padding: 5px;
+}
+tr:nth-child(odd){
+  background-color: white;
+}
+tr:nth-child(even){
+  background-color: var(--latte);
+}
+/*Enviar correo*/
+#pmail{
+  font-size: 30px;
+  color: var(--marron);
+  font-weight: bold;
+}
+#bmail{
+  height: 800px;
+  width: 800px;
+  justify-content: center;
+  align-content: center;
+  color: var(--marron);
+  font-weight: bold;
+}
+.correo label{
+  margin: 4px;
+}
+.correo input{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*Index*/
+.usuario input, .formulari input{
+  border: 3px solid var(--latte);
+  border-radius: 8px;
+  font-size: 15px;
+  width: 250px;
+  height: 30px;
+  box-sizing: border-box;
+  margin: 2px;
+}
+input:focus{
+  border-color: var(--marron);
+  outline: none;
+}
+
+#form_sesion{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.usuario{/*Formulario LOG-IN*/
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.iniciado{
+  justify-content: space-between;
+}
+main{
+  background-color: var(--azul);
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formulari{
+  border: 5px solid var(--latte);
+  border-radius: 15px;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.formulari > div{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: space-between;
+  font-size: 30px;
+}
+#tercero{
+  flex-wrap: wrap;
+}
+.grup, .grup2{
+  width: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+.grup2{
+  width: 540px;
+  margin-left: auto;
+}
+header p{
+  color: white;
+  font-size: 25px;
+}
+#header2{
+  height: 40px;
+}
+h1#pero{
+  font-size: 40px;
+}
+h1{
+  color: white;
+  font-size: 100px;
+}
+
+.usuario input[placeholder]{
+  text-align: center;
+}
+section{
+  background-color: #f2e6e4;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info{
+  z-index: 15;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  float: right;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info p, h3{
+  margin: 20px;
+  font-size: 30px;
+}
+.info p+p{
+  font-size: 20px;
+}
+.imagenes {
+  margin: 30px;
+  height: 80%;
+  width: 70%;
+  border: 8px solid var(--latte);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fotos 20s linear infinite ;
+}
+#inicio_sesion{
+  background-color: var(--azul);
+  justify-content: center;
+}
+iframe{
+  border: none;
+}
+@keyframes fotos {
+  0%{
+    background-image: url("img/primera.jpg");
+  }
+  25%{
+    background-image: url("img/segunda.jpg");
+  }
+  50%{
+    background-image: url("img/tercera.jpg");
+  }
+  75%{
+    background-image: url("img/cuarta.jfif");
+  }
+  100%{
+    background-image: url("img/primera.jpg");
+  }
+}
+.imagenes img {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+footer{
+  background-color: #011126;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-bottom: 20px;
+  height: auto;
+}
+footer p{
+  color:white;
+  font-size: 30px;
+  font-weight: bold;
+}
+footer > div{
+  display: flex;
+  justify-content: space-around;
+}
+.twitter{
+  width: 150px;
+  height: 150px;
+  background-image: url("img/iconos.png");
+  background-position: 625px 0px;
+}
+.facebook{
+  width: 150px;
+  height: 150px;
+  background-image: url("img/iconos.png");
+  background-position: 870px 0px;
+}
+.instagram{
+  width: 150px;
+  height: 150px;
+  background-image: url("img/iconos.png");
+  background-position: 990px 145px;
+}
+menu{
+  height: 100%;
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+li{
+  font-size: 20px;
+  list-style: none;
+  border-bottom: 2px solid #bf9663;
+  text-align: center;
+  line-height: 100px;
+  width: 100%;
+}
+.menu{
+  width:350px;
+  height: 100%;
+  background-color: #011126;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  display: block;
+  margin-left:-350px;
+}
+ul{
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link{
+  width: 45px;
+  height: 100px;
+  color: white;
+  position: relative;
+  border-color: white;
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #011126;
+  text-align: center;
+  line-height: 100px;
+}
+.contenido{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.atras{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  width: 60px;
+  background-color: var(--azul);
+  color: white;
+  border: 4px solid var(--latte);
+  border-radius: 10px;
+}
+#inicio{
+  width: 400px;
+}
+
+.error{
+  color:red;
+}
+#novedades{
+  margin: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#novedades div{
+  display: flex;
+}
+#novedades div div{
+  display: flex;
+  flex-direction: column;
+}
+#imgnovedad{
+  margin: 20px;
+}
+#menu_bt{
+  text-decoration: none;
+  background-color: var(--azul);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  width: 30px;
+  height: 50px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.libro{
+  background-color: var(--azul);
+  color: white;
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+.libro img{
+  height: 600px;
+  box-sizing: border-box;
+}
+.libro div, .libro img{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.libro .reserva{
+  width: 200px;
+}
+
+/*Al vambiar el tamaño de la ventana.*/
+@media screen and (max-width: 1350px){
+  h1{
+    font-size: 60px;
+  }
+  #logo{
+    width: 100px;
+  }
+  #login, #sesion, #registro{
+    height: 30px;
+    width: 150px;
+    margin: 5px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 710px){
+  h1{
+    font-size: 40px;
+  }
+  #logo{
+    width: 50px;
+}
+.phps{
+  display: none;
+}
